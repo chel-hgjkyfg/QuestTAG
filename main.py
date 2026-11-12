@@ -111,7 +111,7 @@ async def chat(payload: ChatRequest):
     try:
         async with httpx.AsyncClient(timeout=60) as client:
             response = await client.post(
-                f"{API_BASE}/v1/chat/completions",
+                f"{API_BASE}/chat/completions",
                 headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
                 json={
                     "model": MODEL,

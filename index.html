@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="КвестТаг — квесты, лазертаг, картинг, лабиринт и праздники. Подберите программу и рассчитайте стоимость онлайн.">
+<title>КвестТаг — приключение начинается здесь</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="noise"></div>
+<header class="topbar">
+  <a class="brand" href="#top"><img src="assets/logo.webp" alt="КвестТаг"><span>КВЕСТ<span class="accent">ТАГ</span></span></a>
+  <nav><a href="#activities">Развлечения</a><a href="#packages">Пакеты</a><a href="#prices">Цены</a><a href="#calculator">Калькулятор</a></nav>
+  <a class="top-cta" href="#booking">Оставить заявку <span>↗</span></a>
+  <button class="menu-btn" aria-label="Открыть меню">☰</button>
+</header>
+<main id="top">
+<section class="hero">
+ <div class="hero-copy">
+  <div class="eyebrow"><i></i> МЕСТО, ГДЕ НАЧИНАЮТСЯ ЭМОЦИИ</div>
+  <h1>ТВОЁ ВРЕМЯ<br><span>ИГРАТЬ</span></h1>
+  <p>Квесты, лабиринты, картинг и праздники, которые запоминаются. Собери свой идеальный сценарий приключения.</p>
+  <div class="hero-actions"><a class="btn btn-hot" href="#activities">Выбрать приключение <b>↗</b></a><a class="text-link" href="#calculator">Рассчитать стоимость <span>↓</span></a></div>
+  <div class="hero-stats"><div><strong>60<span> мин</span></strong><small>ярких впечатлений</small></div><div><strong>6+</strong><small>возраст участников*</small></div><div><strong>∞</strong><small>поводов собраться</small></div></div>
+  <small class="fineprint">*Возрастные ограничения уточняются для каждой программы.</small>
+ </div>
+ <div class="hero-visual"><img class="hero-photo" src="assets/karting.webp" alt="Картинг-трасса КвестТаг"><div class="photo-label"><span class="pulse"></span> READY. SET. PLAY.</div><div class="vertical-tag">QUESTTAG / ADVENTURE CLUB</div><div class="hero-sticker">ИГРА<br>НАЧАЛАСЬ<span>✳</span></div></div>
+ <div class="hero-bottom"><span>01 / 04</span><span>ПРОКРУТИ ВНИЗ, ЧТОБЫ НАЙТИ СВОЁ</span><span>SCROLL ↓</span></div>
+</section>
+
+<section class="section intro" id="activities">
+ <div class="section-head"><div><div class="eyebrow">ВЫБИРАЙ СВОЙ ФОРМАТ</div><h2>БОЛЬШЕ, ЧЕМ<br><span>ПРОСТО ИГРА</span></h2></div><p>Собирай компанию, выбирай формат и выходи за рамки привычного. Здесь каждый найдёт свой уровень драйва.</p></div>
+ <div class="activity-grid">
+  <article class="activity-card wide"><img src="assets/laser-tag.webp" alt="Лабиринт и лазертаг"><div class="card-shade"></div><div class="card-content"><span class="card-num">01 / TEAM PLAY</span><h3>ЛАБИРИНТ</h3><p>Лазертаг · Among Us · Прятки в темноте</p><a href="#prices">Смотреть тарифы ↗</a></div><span class="card-arrow">↗</span></article>
+  <article class="activity-card"><img src="assets/karting.webp" alt="Картинг"><div class="card-shade"></div><div class="card-content"><span class="card-num">02 / SPEED</span><h3>КАРТИНГ</h3><p>Почувствуй скорость на трассе</p><a href="#prices">Смотреть тарифы ↗</a></div><span class="card-arrow">↗</span></article>
+  <article class="activity-card"><img src="assets/package-extreme.webp" alt="Квест-программы"><div class="card-shade"></div><div class="card-content"><span class="card-num">03 / QUEST</span><h3>КВЕСТЫ</h3><p>Гарри Поттер · Gravity Falls · Хоббит</p><a href="#prices">Смотреть тарифы ↗</a></div><span class="card-arrow">↗</span></article>
+ </div>
+</section>
+
+<section class="section packages" id="packages">
+ <div class="section-head"><div><div class="eyebrow">ГОТОВЫЕ СЦЕНАРИИ</div><h2>ПРАЗДНИКИ<br><span>ПОД КЛЮЧ</span></h2></div><p>Уже собрали самые яркие активности в готовые предложения. Выбирай пакет или добавляй услуги под свою компанию.</p></div>
+ <div class="package-grid">
+  <article class="package-card orange"><div class="package-top"><span>01 / MAXIMUM ENERGY</span><span class="pill">ХИТ</span></div><img src="assets/package-extreme.webp" alt="Пакет Экстрим-Таг"><h3>ЭКСТРИМ-ТАГ</h3><p class="package-desc">Максимум движения, командного азарта и эмоций.</p><ul><li>Лазертаг — 60 минут</li><li>Прятки в темноте — 60 минут</li><li>Картинг — 7 минут</li><li>Комната — 3 часа</li><li>Поздравление именинника</li></ul><div class="package-price"><span>5–9 человек</span><strong>2 800 ₽<small>/ чел.</small></strong></div><div class="package-price"><span>10–15 человек</span><strong>2 500 ₽<small>/ чел.</small></strong></div><button class="btn btn-dark choose-package" data-package="extreme">Выбрать пакет ↗</button></article>
+  <article class="package-card white"><div class="package-top"><span>02 / PREMIUM VIBE</span><span class="pill dark-pill">PARTY</span></div><img src="assets/package-luxury.webp" alt="Пакет Luxury"><h3>LUXURY</h3><p class="package-desc">Праздник с ведущим, музыкой и атмосферой вечеринки.</p><ul><li>Лабиринт — 60 минут</li><li>Ведущий с программой — 45 минут</li><li>Дискотека PARTY</li><li>Комната — 3 часа</li></ul><div class="package-price"><span>8–15 человек</span><strong>2 500 ₽<small>/ чел.</small></strong></div><button class="btn btn-hot choose-package" data-package="luxury">Выбрать пакет ↗</button></article>
+ </div>
+ <p class="package-note">Дополнительные услуги к пакетам доступны отдельно. Стоимость дополнительных услуг указана в разделе «Цены».</p>
+</section>
+
+<section class="section price-section" id="prices">
+ <div class="section-head"><div><div class="eyebrow">ПРОЗРАЧНО И ПОНЯТНО</div><h2>ЦЕНЫ И<br><span>ВОЗМОЖНОСТИ</span></h2></div><p>Актуальный прайс по предоставленным материалам. Нажми на категорию, чтобы посмотреть тарифы.</p></div>
+ <div class="price-layout">
+  <div class="price-tabs">
+   <button class="price-tab active" data-tab="quests">Квест-программы <span>01</span></button>
+   <button class="price-tab" data-tab="karting">Картинг <span>02</span></button>
+   <button class="price-tab" data-tab="labyrinth">Лабиринт <span>03</span></button>
+   <button class="price-tab" data-tab="rooms">Аренда комнат <span>04</span></button>
+   <button class="price-tab" data-tab="extras">Дополнительно <span>05</span></button>
+  </div>
+  <div class="price-content" id="price-content" aria-live="polite"></div>
+ </div>
+ <p class="price-footnote">Цены указаны в рублях. Условия и доступность услуг на конкретную дату подтверждает администратор.</p>
+</section>
+
+<section class="section calculator-section" id="calculator">
+ <div class="calc-intro"><div class="eyebrow">СОБЕРИ СВОЙ ВАРИАНТ</div><h2>СКОЛЬКО<br><span>БУДЕТ СТОИТЬ?</span></h2><p>Выбери активности и количество участников — калькулятор покажет ориентировочную стоимость по прайсу.</p><div class="calc-burst">YOUR<br>GAME<br>YOUR<br>RULES</div></div>
+ <div class="calculator">
+  <div class="calc-row"><label for="calc-service">Активность</label><select id="calc-service"><option value="laser">Лазертаг — 60 минут</option><option value="among">Among Us — 60 минут</option><option value="hide">Прятки в темноте — 60 минут</option><option value="kart7">Картинг — 7 минут</option><option value="kart14">Картинг — 14 минут</option><option value="kart21">Картинг — 21 минута</option><option value="kart30">Картинг — 30 минут</option></select></div>
+  <div class="calc-row"><label for="calc-people">Количество участников</label><div class="stepper"><button id="minus" aria-label="Уменьшить">−</button><input id="calc-people" type="number" min="1" max="50" value="8"><button id="plus" aria-label="Увеличить">+</button></div></div>
+  <div class="calc-row"><label for="calc-extra">Дополнительные услуги</label><select id="calc-extra"><option value="0">Без дополнений</option><option value="4500">Ведущий (до 10 чел.) — 4 500 ₽</option><option value="6000">Ведущий (от 11 чел.) — 6 000 ₽</option><option value="3000">Разбитие пиньяты — 3 000 ₽</option><option value="4000">SECRET BOX (до 10 чел.) — 4 000 ₽</option><option value="6000">SECRET BOX (от 11 чел.) — 6 000 ₽</option><option value="3500">Оформление комнаты — 3 500 ₽</option><option value="1800">Поздравление — 1 800 ₽</option></select></div>
+  <div class="calc-result"><span>ПРЕДВАРИТЕЛЬНАЯ СТОИМОСТЬ</span><strong id="calc-total">8 000 ₽</strong><small id="calc-detail">8 участников × 1 000 ₽</small></div>
+  <button class="btn btn-hot calc-book" id="calc-book">Оставить заявку на этот вариант ↗</button>
+  <p class="calc-disclaimer">Расчёт ориентировочный и не является подтверждением бронирования. Комнаты и пакеты имеют отдельные тарифы.</p>
+ </div>
+</section>
+
+<section class="section booking-section" id="booking">
+ <div class="booking-copy"><div class="eyebrow">СЛЕДУЮЩИЙ ШАГ — ЗА ТОБОЙ</div><h2>ГОТОВЫ<br><span>К ПРИКЛЮЧЕНИЮ?</span></h2><p>Оставь заявку — администратор уточнит детали, проверит доступность и подтвердит бронирование.</p><div class="booking-stamp">LET'S<br>PLAY! <b>✳</b></div></div>
+ <form id="booking-form" class="booking-form">
+  <div class="form-title"><span>ЗАЯВКА / 01</span><span>ВСЕ ПОЛЯ ОБЯЗАТЕЛЬНЫ</span></div>
+  <div class="form-grid"><label>Имя<input name="name" required placeholder="Как к тебе обращаться"></label><label>Телефон<input name="phone" required type="tel" placeholder="+7 900 000-00-00"></label><label>Желаемая дата<input name="date" required type="date"></label><label>Время<input name="time" required type="time"></label><label>Количество участников<input name="people" type="number" min="1" max="50" required value="8"></label><label>Что планируете?<select name="program" id="booking-program"><option>Пока выбираю</option><option>Экстрим-Таг</option><option>Luxury</option><option>Квест-программа</option><option>Лабиринт</option><option>Картинг</option><option>Аренда комнаты</option><option>Свой вариант</option></select></label></div>
+  <label class="full-label">Комментарий<textarea name="comment" rows="3" placeholder="Возраст участников, пожелания и вопросы"></textarea></label>
+  <label class="consent"><input type="checkbox" required name="consent"><span>Я согласен(на) на обработку персональных данных для связи по заявке. <small>В демо-версии данные остаются только в этом браузере и не отправляются администратору.</small></span></label>
+  <button class="btn btn-hot submit-btn" type="submit">Сохранить заявку в демо <b>↗</b></button><div id="booking-status" role="status"></div>
+ </form>
+</section>
+
+<section class="section assistant-section" id="assistant">
+ <div class="assistant-heading"><div class="eyebrow">ОНЛАЙН-ПОМОЩНИК</div><h2>ЕСТЬ <span>ВОПРОСЫ?</span></h2><p>Спроси о ценах, программах или попроси рассчитать стоимость. Помощник использует встроенный прайс.</p></div>
+ <div class="chat-shell"><div class="chat-top"><div class="bot-avatar">К<span>Т</span></div><div><strong>КвестТаг • помощник</strong><small><i></i> Демо-консультант онлайн</small></div><span class="demo-label">DEMO AI</span></div><div class="chat-messages" id="chat-messages"><div class="message bot">Привет! Я помогу разобраться с программами и ценами КвестТаг. Что хочешь узнать?</div></div><div class="quick-questions"><button data-question="Сколько стоит лазертаг на 8 человек?">Цена лазертага</button><button data-question="Расскажи про пакеты">Пакетные предложения</button><button data-question="Какие есть развлечения?">Виды развлечений</button><button data-question="Позови администратора">Позвать администратора</button></div><form id="chat-form" class="chat-input"><input id="chat-text" placeholder="Напиши свой вопрос..." autocomplete="off"><button type="submit" aria-label="Отправить">➤</button></form></div>
+</section>
+<section class="closing"><div class="closing-mark">КВЕСТ<span>ТАГ</span></div><p>ПРИКЛЮЧЕНИЕ НАЧИНАЕТСЯ ЗДЕСЬ</p><a href="#top">НАВЕРХ ↑</a></section>
+</main>
+<footer><span>© <span id="year"></span> КВЕСТТАГ</span><span>ИГРАЙ. СОБИРАЙ. ПОМНИ.</span><span>ПРОТОТИП САЙТА</span></footer>
+<script src="app.js"></script>
+</body></html>

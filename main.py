@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 AUTH_URL = "https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-API_BASE = "https://api.giga.chat"
+API_BASE = "https://gigachat.devices.sberbank.ru/api/v1"
 SCOPE = os.getenv("GIGACHAT_SCOPE", "GIGACHAT_API_PERS")
 MODEL = os.getenv("GIGACHAT_MODEL", "GigaChat")
 AUTH_KEY = os.getenv("GIGACHAT_AUTH_KEY", "")
@@ -90,7 +90,7 @@ async def get_access_token() -> str:
             response.raise_for_status()
             data = response.json()
             _token = data["access_token"]
-            _token_expires = int(data.get("expires_at", time.time() + 1800))
+            _expires = int(data.get("expires_at", (time.time() + 1800) * 1000))\n            _token_expires = _expires / 1000 if _expires > 10**12 else _expires
             return _token
     except (httpx.HTTPError, KeyError, ValueError):
         raise HTTPException(status_code=502, detail="Не удалось авторизоваться в GigaChat.")

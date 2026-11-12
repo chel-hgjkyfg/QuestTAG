@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 AUTH_URL = "https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
-API_BASE = "https://gigachat.devices.sberbank.ru/api/v1"
+API_BASE = "https://api.giga.chat/v1"
 SCOPE = os.getenv("GIGACHAT_SCOPE", "GIGACHAT_API_PERS")
 MODEL = os.getenv("GIGACHAT_MODEL", "GigaChat")
 AUTH_KEY = os.getenv("GIGACHAT_AUTH_KEY", "")

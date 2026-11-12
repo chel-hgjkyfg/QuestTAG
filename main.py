@@ -101,6 +101,7 @@ async def health():
 
 @app.post("/api/chat")
 async def chat(payload: ChatRequest):
+    global _token, _token_expires
     token = await get_access_token()
     messages = [{"role": "system", "content": KNOWLEDGE}]
     for item in payload.history[-10:]:

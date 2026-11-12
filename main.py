@@ -90,7 +90,8 @@ async def get_access_token() -> str:
             response.raise_for_status()
             data = response.json()
             _token = data["access_token"]
-            _expires = int(data.get("expires_at", (time.time() + 1800) * 1000))\n            _token_expires = _expires / 1000 if _expires > 10**12 else _expires
+            _expires = int(data.get("expires_at", (time.time() + 1800) * 1000))
+            _token_expires = _expires / 1000 if _expires > 10**12 else _expires
             return _token
     except (httpx.HTTPError, KeyError, ValueError):
         raise HTTPException(status_code=502, detail="Не удалось авторизоваться в GigaChat.")

@@ -12,7 +12,7 @@ from pydantic import BaseModel, Field
 AUTH_URL = "https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
 API_BASE = "https://api.giga.chat/v1"
 SCOPE = os.getenv("GIGACHAT_SCOPE", "GIGACHAT_API_PERS")
-MODEL = os.getenv("GIGACHAT_MODEL", "GigaChat")
+MODEL = os.getenv("GIGACHAT_MODEL", "GigaChat-2")
 AUTH_KEY = os.getenv("GIGACHAT_AUTH_KEY", "")
 ALLOWED_ORIGINS = [x.strip() for x in os.getenv(
     "ALLOWED_ORIGINS",

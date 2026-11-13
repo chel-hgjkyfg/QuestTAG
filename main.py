@@ -122,7 +122,7 @@ async def chat(payload: ChatRequest):
         async with httpx.AsyncClient(timeout=60) as client:
             response = await client.post(
                 f"{API_BASE}/chat/completions",
-                headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+                headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json", "Accept": "application/json", "User-Agent": "QuestTAG/1.0"},
                 json={
                     "model": MODEL,
                     "messages": messages,
@@ -136,6 +136,12 @@ async def chat(payload: ChatRequest):
             return {"reply": answer, "model": data.get("model", MODEL)}
     except httpx.HTTPStatusError as exc:
         status = exc.response.status_code
+        logging.error(
+            "GigaChat completion failed: HTTP %s; response=%s; configured_model=%s",
+            status,
+            exc.response.text[:1200],
+            MODEL,
+        )
         if status == 401:
             _token = None
             _token_expires = 0

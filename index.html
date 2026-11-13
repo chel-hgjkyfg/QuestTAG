@@ -21,21 +21,16 @@
 <main id="top">
 <section class="hero">
  <div class="hero-copy">
-  
   <h1>ДЕТСКИЙ<br><span>ПРАЗДНИК</span></h1>
   <p>Квесты, лазертаг, картинг и готовые программы для детских праздников. Выберите активности и составьте программу под свой бюджет.</p>
   <div class="hero-actions"><a class="btn btn-hot" href="#activities">Выбрать формат развлечений <b>↗</b></a><a class="text-link" href="#calculator">Рассчитать стоимость <span>↓</span></a></div>
-
  </div>
  <div class="hero-visual"><img class="hero-photo" src="assets/karting.webp" alt="Картинг-трасса КвестТаг"></div>
- 
 </section>
-
 <section class="section assistant-section" id="assistant">
  <div class="assistant-heading"><div class="eyebrow">КОНСУЛЬТАЦИЯ ПО ПРОГРАММЕ</div><h2>ПОМОЖЕМ <span>ВЫБРАТЬ</span></h2><p>Задайте вопрос о развлечениях, стоимости и организации праздника. Онлайн-консультант на базе GigaChat поможет сориентироваться по прайсу.</p></div>
  <div class="chat-shell"><div class="chat-top"><div class="bot-avatar">К<span>Т</span></div><div><strong>КвестТаг • помощник</strong></div><span class="demo-label">GIGACHAT</span></div><div class="chat-messages" id="chat-messages"><div class="message bot">Здравствуйте! Я помогу подобрать развлечения, разобраться в ценах и составить программу праздника. Сколько гостей планируете?</div></div><div class="quick-questions"><button data-question="Сколько стоит лазертаг на 8 человек?">Стоимость лазертага</button><button data-question="Расскажи про пакеты">Пакетные предложения</button><button data-question="Какие есть развлечения?">Все развлечения</button><button data-question="Как связаться с администратором">Позвать администратора</button></div><form id="chat-form" class="chat-input"><input id="chat-text" placeholder="Напиши свой вопрос..." autocomplete="off"><button type="submit" aria-label="Отправить">➤</button></form></div>
 </section>
-
 <section class="section intro" id="activities">
  <div class="section-head"><div><div class="eyebrow">НАПРАВЛЕНИЯ И УСЛУГИ</div><h2>ВЫБЕРИТЕ ФОРМАТ<br><span>РАЗВЛЕЧЕНИЙ</span></h2></div><p>Выберите подходящие активности для дня рождения, школьного праздника или встречи с друзьями.</p></div>
  <div class="activity-grid">
@@ -44,7 +39,6 @@
   <article class="activity-card"><img src="assets/package-extreme.webp" alt="Квест-программы"><div class="card-shade"></div><div class="card-content"><h3>КВЕСТЫ</h3><p>Гарри Поттер · Gravity Falls · Хоббит</p><a href="#prices">Смотреть тарифы ↗</a></div><span class="card-arrow">↗</span></article>
  </div>
 </section>
-
 <section class="section packages" id="packages">
  <div class="section-head"><div><div class="eyebrow">ГОТОВЫЕ СЦЕНАРИИ</div><h2>ПРАЗДНИКИ<br><span>ПОД КЛЮЧ</span></h2></div><p>Уже собрали самые яркие активности в готовые предложения. Выберите готовый пакет или составьте индивидуальную программу из отдельных услуг.</p></div>
  <div class="package-grid">
@@ -53,58 +47,22 @@
  </div>
  <p class="package-note">Дополнительные услуги к пакетам доступны отдельно. Стоимость дополнительных услуг указана в разделе «Цены».</p>
 </section>
-
 <section class="section price-section" id="prices">
  <div class="section-head"><div><div class="eyebrow">ПРОЗРАЧНО И ПОНЯТНО</div><h2>ЦЕНЫ И<br><span>ВОЗМОЖНОСТИ</span></h2></div><p>Стоимость услуг по категориям. Итоговую доступность и условия подтвердит администратор.</p></div>
- <div class="price-layout">
-  <div class="price-tabs">
-   <button class="price-tab active" data-tab="quests">Квест-программы <span>01</span></button>
-   <button class="price-tab" data-tab="karting">Картинг <span>02</span></button>
-   <button class="price-tab" data-tab="labyrinth">Лабиринт <span>03</span></button>
-   <button class="price-tab" data-tab="rooms">Аренда комнат <span>04</span></button>
-   <button class="price-tab" data-tab="extras">Дополнительно <span>05</span></button>
-  </div>
-  <div class="price-content" id="price-content" aria-live="polite"></div>
- </div>
+ <div class="price-layout"><div class="price-tabs"><button class="price-tab active" data-tab="quests">Квест-программы <span>01</span></button><button class="price-tab" data-tab="karting">Картинг <span>02</span></button><button class="price-tab" data-tab="labyrinth">Лабиринт <span>03</span></button><button class="price-tab" data-tab="rooms">Аренда комнат <span>04</span></button><button class="price-tab" data-tab="extras">Дополнительно <span>05</span></button></div><div class="price-content" id="price-content" aria-live="polite"></div></div>
  <p class="price-footnote">Цены указаны в рублях. Условия и доступность услуг на конкретную дату подтверждает администратор.</p>
 </section>
-
 <section class="section calculator-section" id="calculator">
  <div class="calc-intro"><div class="eyebrow">ИНДИВИДУАЛЬНАЯ СМЕТА</div><h2>СОСТАВЬТЕ<br><span>СВОЮ ПРОГРАММУ</span></h2><p>Добавляйте развлечения в нужном порядке, выбирайте дополнительные услуги и задавайте длительность аренды комнаты. Стоимость пересчитывается автоматически.</p></div>
- <div class="calculator builder">
-  <div class="builder-fields">
-   <label>Количество гостей<input id="calc-people" type="number" min="1" max="50" value="8"></label>
-   <label>Аренда комнаты, часов<input id="calc-hours" type="number" min="1" max="12" value="3"></label>
-  </div>
-  <div class="builder-title"><strong>Программа мероприятия</strong><span>Добавьте все выбранные активности</span></div>
-  <div id="builder-items" class="builder-items"></div>
-  <div class="builder-actions">
-   <button type="button" class="btn btn-dark" id="add-activity">+ Добавить активность</button>
-   <button type="button" class="builder-extra" id="add-extra">+ Дополнительная услуга</button>
-   <button type="button" class="builder-room" id="add-room">+ Добавить аренду комнаты</button>
-  </div>
-  <div class="calc-result"><span>ОРИЕНТИРОВОЧНАЯ СТОИМОСТЬ ВСЕЙ ПРОГРАММЫ</span><strong id="calc-total">0 ₽</strong><small id="calc-detail">Добавьте активности, чтобы увидеть расчёт</small></div>
-  <div id="calc-notes" class="calc-notes" aria-live="polite"></div>
-  <button class="btn btn-hot calc-book" id="calc-book">Передать программу в заявку ↗</button>
-  <p class="calc-disclaimer">Расчёт предварительный. Для аренды свыше 3 часов дополнительное время оценено по часовому тарифу; точную стоимость подтвердит администратор. Цены и доступность услуг могут уточняться.</p>
- </div>
+ <div class="calculator builder"><div class="builder-fields"><label>Количество гостей<input id="calc-people" type="number" min="1" max="50" value="8"></label><label>Аренда комнаты, часов<input id="calc-hours" type="number" min="1" max="12" value="3"></label></div><div class="builder-title"><strong>Программа мероприятия</strong><span>Добавьте все выбранные активности</span></div><div id="builder-items" class="builder-items"></div><div class="builder-actions"><button type="button" class="btn btn-dark" id="add-activity">+ Добавить активность</button><button type="button" class="builder-extra" id="add-extra">+ Дополнительная услуга</button><button type="button" class="builder-room" id="add-room">+ Добавить аренду комнаты</button></div><div class="calc-result"><span>ОРИЕНТИРОВОЧНАЯ СТОИМОСТЬ ВСЕЙ ПРОГРАММЫ</span><strong id="calc-total">0 ₽</strong><small id="calc-detail">Добавьте активности, чтобы увидеть расчёт</small></div><div id="calc-notes" class="calc-notes" aria-live="polite"></div><button class="btn btn-hot calc-book" id="calc-book">Передать программу в заявку ↗</button><p class="calc-disclaimer">Расчёт предварительный. Для аренды свыше 3 часов дополнительное время оценено по часовому тарифу; точную стоимость подтвердит администратор. Цены и доступность услуг могут уточняться.</p></div>
 </section>
-
 <section class="section booking-section" id="booking">
  <div class="booking-copy"><div class="eyebrow">ОСТАВИТЬ ЗАЯВКУ</div><h2>ОБСУДИМ<br><span>ВАШ ПРАЗДНИК?</span></h2><p>Оставьте контакты и пожелания. Администратор уточнит детали и подтвердит возможность бронирования.</p><div class="booking-stamp">LET'S<br>PLAY! <b>✳</b></div></div>
- <form id="booking-form" class="booking-form">
-  <div class="form-title"><span>ЗАЯВКА / 01</span><span>ВСЕ ПОЛЯ ОБЯЗАТЕЛЬНЫ</span></div>
-  <div class="form-grid"><label>Имя<input name="name" required placeholder="Как к тебе обращаться"></label><label>Телефон<input name="phone" required type="tel" placeholder="+7 900 000-00-00"></label><label>Желаемая дата<input name="date" required type="date"></label><label>Время<input name="time" required type="time"></label><label>Количество участников<input name="people" type="number" min="1" max="50" required value="8"></label><label>Что планируете?<select name="program" id="booking-program"><option>Пока выбираю</option><option>Экстрим-Таг</option><option>Luxury</option><option>Квест-программа</option><option>Лабиринт</option><option>Картинг</option><option>Аренда комнаты</option><option>Свой вариант</option></select></label></div>
-  <label class="full-label">Комментарий<textarea name="comment" rows="3" placeholder="Возраст участников, пожелания и вопросы"></textarea></label>
-  <label class="consent"><input type="checkbox" required name="consent"><span>Я согласен(на) на обработку персональных данных для связи по заявке. <small>Заявка пока сохраняется только в этом браузере и не отправляется администратору.</small></span></label>
-  <button class="btn btn-hot submit-btn" type="submit">Сохранить черновик <b>↗</b></button><div id="booking-status" role="status"></div>
- </form>
+ <form id="booking-form" class="booking-form"><div class="form-title"><span>ЗАЯВКА / 01</span><span>ВСЕ ПОЛЯ ОБЯЗАТЕЛЬНЫ</span></div><div class="form-grid"><label>Имя<input name="name" required placeholder="Как к тебе обращаться"></label><label>Телефон<input name="phone" required type="tel" placeholder="+7 900 000-00-00"></label><label>Желаемая дата<input name="date" required type="date"></label><label>Время<input name="time" required type="time"></label><label>Количество участников<input name="people" type="number" min="1" max="50" required value="8"></label><label>Что планируете?<select name="program" id="booking-program"><option>Пока выбираю</option><option>Экстрим-Таг</option><option>Luxury</option><option>Квест-программа</option><option>Лабиринт</option><option>Картинг</option><option>Аренда комнаты</option><option>Свой вариант</option></select></label></div><label class="full-label">Комментарий<textarea name="comment" rows="3" placeholder="Возраст участников, пожелания и вопросы"></textarea></label><label class="consent"><input type="checkbox" required name="consent"><span>Я согласен(на) на обработку персональных данных для связи по заявке. <small>Заявка пока сохраняется только в этом браузере и не отправляется администратору.</small></span></label><button class="btn btn-hot submit-btn" type="submit">Сохранить черновик <b>↗</b></button><div id="booking-status" role="status"></div></form>
 </section>
-
-
 <section class="closing"><div class="closing-mark">КВЕСТ<span>ТАГ</span></div><p>ПРИКЛЮЧЕНИЕ НАЧИНАЕТСЯ ЗДЕСЬ</p><a href="#top">НАВЕРХ ↑</a></section>
 </main>
 <footer><span>© <span id="year"></span> КВЕСТТАГ</span><span>ИГРАЙ. СОБИРАЙ. ПОМНИ.</span><span>ИНФОРМАЦИЯ И ЦЕНЫ</span></footer>
-<script src="config.js"></script>
-<script src="app.js"></script>
+<script src="config.js?v=3"></script>
+<script src="app.js?v=3"></script>
 </body></html>

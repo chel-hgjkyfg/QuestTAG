@@ -12,6 +12,6 @@ services:
       - key: GIGACHAT_SCOPE
         value: GIGACHAT_API_PERS
       - key: GIGACHAT_MODEL
-        value: GigaChat
+        value: GigaChat-2
       - key: ALLOWED_ORIGINS
         value: https://chel-hgjkyfg.github.io

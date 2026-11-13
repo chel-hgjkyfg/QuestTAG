@@ -3,7 +3,7 @@ services:
     name: questtag-gigachat-api
     runtime: python
     plan: free
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install -r requirements.txt && curl -k "https://gu-st.ru/content/lending/russian_trusted_root_ca_pem.crt" -o /tmp/russian_trusted_root_ca_pem.crt && cat /tmp/russian_trusted_root_ca_pem.crt >> "$(python -m certifi)"
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     envVars:

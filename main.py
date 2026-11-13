@@ -1,3 +1,4 @@
+import logging
 import os
 import time
 import uuid
@@ -93,7 +94,16 @@ async def get_access_token() -> str:
             _expires = int(data.get("expires_at", (time.time() + 1800) * 1000))
             _token_expires = _expires / 1000 if _expires > 10**12 else _expires
             return _token
-    except (httpx.HTTPError, KeyError, ValueError):
+    except httpx.HTTPStatusError as exc:
+        # Log the provider response for diagnosis; never log the Authorization Key.
+        logging.error(
+            "GigaChat OAuth rejected the request: HTTP %s; response=%s",
+            exc.response.status_code,
+            exc.response.text[:1000],
+        )
+        raise HTTPException(status_code=502, detail="Не удалось авторизоваться в GigaChat.")
+    except (httpx.HTTPError, KeyError, ValueError) as exc:
+        logging.exception("GigaChat OAuth request failed: %s", type(exc).__name__)
         raise HTTPException(status_code=502, detail="Не удалось авторизоваться в GigaChat.")
 
 @app.get("/health")
